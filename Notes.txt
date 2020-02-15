@@ -1,0 +1,320 @@
+HTML:
+
+Hyper Text Markup Language 
+
+-> to describe web pages.
+
+CSS:  Used to provide the design and layout for HTML Pages.
+
+
+* W3C gave us HTML mainly used to create web pages.
+
+Mark up Language:
+
+A mark up language is a set of tags.
+
+A tag is a keyword enclosed in an angular bracket.
+
+ex: <html>
+
+
+* How html pages gets rendered?
+
+-> 
+
+HTML Page to browser 
+
+browser -> Creates DOM Tree and represents each element as an object.
+
+
+
+Render Engine -> Follows DOM and renders the web page.
+
+DOM Viewer:  http://software.hixie.ch/utilities/js/live-dom-viewer/
+
+
+
+ex:
+
+<html>
+
+<head> 
+
+    <!--
+        title,styles,metadata,scripts,favicon,link to other scripts and styles
+    -->
+
+    <title>DIGITALLYNC</title>
+
+    <!-- <meta http-equiv="refresh" content="1"> -->
+
+    <link rel="icon" href="download.jpeg" type="image/jpeg" sizes="16x16">
+
+     </head>
+
+      <body>
+
+
+     <h1>This is a simple header!!</h1>
+
+     <h2>This is another header!</h2>
+    </body>
+
+    
+
+
+
+</html>
+
+
+
+
+Key Points:
+
+1.  HTML is not case sensitive
+
+2. HTML cannot be compiled
+
+3. If we do not use ending tag, Browser adds it when it starts rendering.
+
+4. DOM is responsible for dynamic web pages.
+
+5. Few tags does not have content and attributes, those tags need not 
+to be closed.
+
+ex:  <br>
+
+Forms:
+
+tag:  form 
+
+ex:
+
+<html>
+   <head>
+   </head>
+
+   <body>
+      <form>
+
+        <label>Username:</label><input  type="number" placeholder="enter username"> <br>
+
+         <label>Password:</label> <input type="password" placeholder="enter password"><br>
+         
+         <label>State</label>
+
+          <select>
+                <option>Select State</option>
+             <option>Telangana</option>
+             <option>Andhra Pradesh</option>
+             <option>TamilNadu</option>
+
+          </select>   <br>
+
+          <input type="radio" name="choice"> Full Time
+          <input type="radio" name="choice"> Part Time
+          <input type="radio" name="choice"> Distance   <br>
+
+           Your Bio: <textarea cols="20" rows="5"></textarea> <br>
+
+            <input type="checkbox"> I agree tand c <br><br> 
+        
+         <button>Register</button>
+
+
+      </form>
+
+
+   </body>
+
+</html>
+
+/*
+
+radio,
+checkbox,
+textarea,
+drop down list
+
+*/
+
+
+There are two types of elements in HTML.
+
+1. block level elements : Any element that starts in a new line and occupies
+the max width
+2. inline : any element that starts in same line.
+
+ex: span, a
+
+ex:
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1 style="background-color: red">This is heading 1</h1>
+        <h2>This is heading 1</h2>
+        <span style="background-color: red">span 1</span>
+        <span>span 2</span>
+        <span>span 3</span>
+        
+
+    </body>
+</html>
+
+Creating a navigation bar:
+
+home   login    register    contactus  careers
+
+
+home.html:
+
+<html>
+
+ <head>
+
+ </head>
+
+ <body>
+
+     <a href="home.html">Home</a>
+     <a href="login.html">Login</a>
+     <a href="register.html">Register</a>
+     <a href="contactus.html">ContactUs</a>
+
+     <h1>This is home page</h1>
+
+
+ </body>
+
+</html>
+
+
+login.html:
+
+<html>
+
+ <head>
+
+ </head>
+
+ <body>
+
+     <a href="home.html">Home</a>
+     <a href="login.html">Login</a>
+     <a href="register.html">Register</a>
+     <a href="contactus.html">ContactUs</a>
+
+     <h1>This is Login Page</h1>
+
+      <form>
+
+       Username: <input type="text"> <br>
+       Password: <input type="password"><br>
+        <button>Login</button>
+
+      </form>
+
+
+ </body>
+
+</html>
+
+Table:
+
+<html>
+
+<head>
+
+    <style>
+    
+      td{
+          text-align: center
+      }
+
+      th{
+          background-color: yellow
+      }
+
+    </style>
+
+</head>
+
+ <body>
+
+    <table border="1" width="100%" height="30%">
+
+       <tr>
+           <th>Course Name</th>
+           <th>Duration</th>
+           <th>Instructor</th>
+           <th>Mode</th>
+       </tr>
+
+       <tr>
+           <td>Java</td>
+           <td>40 Hours</td>
+           <td> Sai</td>
+           <td>Offline</td>
+       </tr>
+       <tr>
+            <td>Automation</td>
+            <td>50 Hours</td>
+            <td> Sai</td>
+            <td>Offline</td>
+        </tr>
+        <tr>
+                <td>Mean Stack</td>
+                <td>40 Hours</td>
+                <td> Sai</td>
+                <td>Offline</td>
+            </tr>
+            <tr>
+                    <td>Mern stack</td>
+                    <td>40 Hours</td>
+                    <td> Sai</td>
+                    <td>Offline</td>
+                </tr>
+
+    </table>
+
+ </body>
+</html>
+
+
+Tasks:
+
+1. Create a navigation bar for the following,
+
+ notifications, home, inbox, logout, messages.
+
+2. Create a table depiciting a cricket match.
+
+https://www.cricbuzz.com/live-cricket-scorecard/22656/rsa-vs-eng-2nd-t20i-england-tour-of-south-africa-2019-20
+
+3. Create a registration form that contains the following fields,
+
+    player name,
+
+    country,
+
+    specialization,
+
+     matches,
+
+     catches,
+
+     runs,
+
+     strike rate,
+
+     average,
+
+     gender,
+
+     wickets.
+
+
